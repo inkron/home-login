@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
+
+body{
+    background-color: #0e1013;
+    padding: 0;
+    margin: 0;
+}
+
+.image{
+    position: fixed;
+    width: 9vh;
+    top: 50%;
+    left: 50%;
+    margin-top: -5vh;
+    margin-left: -5vw;
+    animation-delay: 2s;
+    animation-name: imgtodiv;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; 
+}
+.divBack{
+    width: 100vw;
+    height: 100vh;
+    background-color: #191f26;
+    z-index: -1;
+    animation-delay: 2s;
+    animation-name: backtodiv;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;  
+}
+.inkronText{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10vw;
+    color:antiquewhite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -19vw;
+    margin-top: -5vw;
+    z-index: -2;
+}
+
+@keyframes backtodiv{
+    from {height:100vh;}
+    to {height: 15vh;}
+}
+@keyframes imgtodiv{
+    from {margin-top:-5vh; margin-left: -5vw;}
+    to {margin-top: -47vh; margin-left: -47vw;}
+}
